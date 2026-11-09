@@ -29,6 +29,13 @@ public class Demo {
 
         train(lecturer1);
         train(educationalStaff1);
+
+        //Question no 5
+        System.out.println("\n--- Prove Q5: Downcasting Pure Employee ---");
+        Employee pureEmployee = new Employee("112233", "Budi Santoso");
+        Lecturer forcedLecturer = (Lecturer) pureEmployee;
+        
+        forcedLecturer.displayInfo();
     }
 
 
